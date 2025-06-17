@@ -33,6 +33,7 @@ plugins:
 
 # Custom settings
 permalink: /:title
+posts_title: "Posts"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
