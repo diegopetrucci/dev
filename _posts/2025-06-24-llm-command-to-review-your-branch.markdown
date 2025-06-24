@@ -18,3 +18,5 @@ These are (part of) the results:
 ![PR review by claude](/assets/pr-review-command-result.png)
 
 I am wondering if the "niceties" could be omitted and have it just focus on the potential issues, as it tends to be quite verbose, but haven't gotten around doing that. Also, it is indeed quite funny to see it rate a PR with a less than stellar rating (eg 7.5) when it was the one writing all the code.
+
+Lastly, I do tend to relay the feedback to the instance of Claude that is writing the code. It tends to work fine, but sometimes it does need a little nudge in the right direction.
