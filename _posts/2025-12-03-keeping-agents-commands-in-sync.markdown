@@ -5,11 +5,15 @@ date:   2025-12-03 10:00:00 +0100
 categories: agents llm ai claudecode cli codex gemini amp opencode cursor
 ---
 
-Lately, I've found myself in this predictament:
+Lately, I've found myself in this predicament:
 
 1. I write a lot of code using CLI agents
 2. I switch often between them as none has a particularly strong moat
 3. I have a set of global, custom, commands that I like to use across projects
+
+For reference: custom commands are user-defined prompts. Eg:
+
+![Calling a command]({{ site.baseurl }}/assets/custom-prompts.png)
 
 Hence, I need to have a way to keep them in sync. I've solved syncing my setup across different machines by using dotfiles and chezmoi, but, so far, I had no real solution for keeping the commands themselves in sync.
 
