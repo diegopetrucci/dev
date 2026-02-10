@@ -23,6 +23,21 @@ description: >-
   Notes on AI agents, developer workflows, and practical experiments from real projects.
 url: "https://diegopetrucci.github.io"
 baseurl: "/dev"
+author:
+  name: "Diego Petrucci"
+  avatar: "/assets/me.jpg"
+  bio: "Notes on AI agents and software engineering"
+  location: "London"
+  links:
+    - label: "X"
+      icon: "fab fa-fw fa-x-twitter"
+      url: "https://x.com/diegopetrucci"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/diegopetrucci"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/diegopetrucci/"
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.27.3"
 plugins:
