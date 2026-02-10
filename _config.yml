@@ -50,6 +50,10 @@ plugins:
 # Custom settings
 permalink: /:title
 posts_title: "Posts"
+analytics:
+  provider: google-gtag
+  google:
+    tracking_id: G-0WQDFLBS11
 
 # Exclude from processing.
 # The following items will not be processed, by default.
