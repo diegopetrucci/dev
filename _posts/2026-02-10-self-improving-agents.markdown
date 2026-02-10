@@ -8,7 +8,7 @@ date:   2026-02-10 08:00:00 +0100
 categories: agents llm ai self-improvement
 ---
 
-LLM agents are great, but them not having memory and not "learning on the job" is less than ideal. Take `AGENTS.md`, a hack borne out this need.
+LLM agents are great, but them not having memory and not "learning on the job" is less than ideal. Take `AGENTS.md`, a hack born out this need.
 
 These days there's quite a lot of discourse on X about ways to improve this flow, and to make agents learn automatically. People have come up with very complicated setups, but I like simple stuff (maybe a skill issue, who knows). This is what I got so far:
 
