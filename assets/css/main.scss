@@ -5,6 +5,11 @@
 @import "minimal-mistakes/skins/default"; // skin
 @import "minimal-mistakes"; // main partials
 
+/* Hide the masthead on the home page only. */
+.layout--home .masthead {
+  display: none;
+}
+
 /* Keep LinkedIn icon neutral in the author sidebar. */
 .author__urls .social-icons .fa-linkedin,
 .author__urls .social-icons .fa-linkedin-in {
