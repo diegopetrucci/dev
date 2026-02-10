@@ -5,9 +5,9 @@ date:   2026-02-10 08:00:00 +0100
 categories: agents llm ai self-improvement
 ---
 
-LLM agents are great, but them not having memory and not "learning on the job" is less than ideal. `AGENTS.md` was a hack born out this need, and these days there's quite a lot of discourse on X about ways to improve the agents' memory and make them learn automatically.
+LLM agents are great, but them not having memory and not "learning on the job" is less than ideal. Take `AGENTS.md`, a hack borne out this need.
 
-People have come up with very complicated setups, but I like simple stuff (maybe a skill issue, who knows). This is what I've come up with:
+These days there's quite a lot of discourse on X about ways to improve this flow, and to make agents learn automatically. People have come up with very complicated setups, but I like simple stuff (maybe a skill issue, who knows). This is what I got so far:
 
 1. For each project, I add a short section to `AGENTS.md` that tells the agent to keep a private notes file (`.agents/notes.md`) and update it every time it learns something new, I correct it, or it keeps fumbling commands.
 2. Each note line starts with a counter, starting at `[0]`.
@@ -15,13 +15,13 @@ People have come up with very complicated setups, but I like simple stuff (maybe
 4. If it is, it just increments the counter.
 5. When a note reaches `[3]`, it promotes it into the main `AGENTS.md` instructions.
 
-This is all to avoid having to manually edit the agents file for corrections, or having to tell the agent directly to do it.
+This is all to avoid having to manually edit the agents file for corrections, or having to tell them to do it within conversations.
 
-I've found that codex loves to write _a lot_ of notes, which I find kind of cute. Plus the file doubles as a nice history of the project.
+I use codex primarly, and I've found that it loves to write _a lot_ of notes, which is kind of cute. Plus the file doubles as a nice history of the project.
 
-I've been using this strategy for just a week-ish, so I haven't hit issues with memories being too long, but I assume eventually I'll need to prune them manually, or tell the agents to do it if eg the number of items is > N.
+I've been using this strategy for just a week-ish, so I haven't hit issues with memories being too long; but I assume eventually I'll need to prune them manually, or tell the agents to do it if eg the number of items is > N.
 
-For reference, this is the section in my agents file. It's messy but I wrote it in one go, and it works well enough for now:
+For reference, this is the section in my agents file. It's messy as I wrote it in one go, but it works well enough for now:
 
 ```markdown
 ## Agent notes
@@ -52,3 +52,7 @@ And what it promoted to the `AGENTS.md`:
 
 - Keep `#if/#endif` directives indented to match the surrounding SwiftUI modifier chain indentation in this repo.
 ```
+
+That's it. No skills, nor complicated setups.
+
+Give this a try, and please let me know at [@diegopetrucci](https://x.com/diegopetrucci) if you have improvements, if you hate it, or anything else. This is all new for everybody!
