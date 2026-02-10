@@ -12,7 +12,7 @@ LLM agents are great, but them not having memory and not "learning on the job" i
 
 These days there's quite a lot of discourse on X about ways to improve this flow, and to make agents learn automatically. People have come up with very complicated setups, but I like simple stuff (maybe a skill issue, who knows). This is what I got so far:
 
-1. For each project, I add a short section to `AGENTS.md` that tells the agent to keep a private notes file (`.agents/notes.md`) and update it every time it learns something new, I correct it, or it keeps fumbling commands.
+1. For each project, I add a short section to `AGENTS.md` that tells the agent to keep a private notes file (`.agents/notes.md`) and update it every time it learns something new, I correct it, or it finds that something is wrong.
 2. Each note line starts with a counter, starting at `[0]`.
 3. Before writing a new note, it checks if the idea is already there.
 4. If it is, it just increments the counter.
