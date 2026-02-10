@@ -1,4 +1,7 @@
 ---
+header:
+  image: /assets/self-improving-agents-header.png
+  og_image: /assets/self-improving-agents-header.png
 layout: single
 title:  "A simple way to add memory to agents and make them self-improve"
 date:   2026-02-10 08:00:00 +0100
