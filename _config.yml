@@ -38,6 +38,9 @@ author:
     - label: "@diegopetrucci"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/diegopetrucci/"
+    - label: "Feed"
+      icon: "fas fa-fw fa-rss-square"
+      url: "https://diegopetrucci.github.io/dev/feed.xml"
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.27.3"
 plugins:

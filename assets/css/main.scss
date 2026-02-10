@@ -16,3 +16,8 @@
   border-bottom: 0;
   padding-bottom: 0;
 }
+
+/* Remove footer section entirely. */
+.page__footer {
+  display: none;
+}
