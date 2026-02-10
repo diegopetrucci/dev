@@ -29,13 +29,13 @@ author:
   bio: "Notes on AI agents and software engineering"
   location: "London"
   links:
-    - label: "X"
+    - label: "@diegopetrucci"
       icon: "fab fa-fw fa-x-twitter"
       url: "https://x.com/diegopetrucci"
-    - label: "GitHub"
+    - label: "@diegopetrucci"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/diegopetrucci"
-    - label: "LinkedIn"
+    - label: "@diegopetrucci"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/diegopetrucci/"
 # Build settings

@@ -1,0 +1,18 @@
+---
+# Only the main Sass file needs front matter.
+---
+
+@import "minimal-mistakes/skins/default"; // skin
+@import "minimal-mistakes"; // main partials
+
+/* Keep LinkedIn icon neutral in the author sidebar. */
+.author__urls .social-icons .fa-linkedin,
+.author__urls .social-icons .fa-linkedin-in {
+  color: #3d4144;
+}
+
+/* Remove home page divider under "Recent Posts" subtitle. */
+.layout--home .archive__subtitle {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
