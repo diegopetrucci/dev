@@ -24,7 +24,7 @@ description: >-
 url: "https://diegopetrucci.github.io"
 baseurl: "/dev"
 # Build settings
-remote_theme: "mmistakes/minimal-mistakes@4.27.1"
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
