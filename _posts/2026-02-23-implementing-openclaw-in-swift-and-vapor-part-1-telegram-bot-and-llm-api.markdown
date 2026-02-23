@@ -1,4 +1,7 @@
 ---
+header:
+  image: /assets/reimplementing-openclaw/part-one-openclaw-swift.png
+  og_image: /assets/reimplementing-openclaw/part-one-openclaw-swift.png
 layout: single
 title:  "Implementing OpenClaw in Swift and Vapor, part 1: telegram bot & Anthropic APIs"
 date:   2026-02-23 10:00:00 +0100
