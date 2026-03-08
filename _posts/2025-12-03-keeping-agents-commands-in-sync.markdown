@@ -9,9 +9,9 @@ Lately, I've found myself in this predicament:
 
 1. I write a lot of code using CLI agents
 2. I switch often between them as none has a particularly strong moat
-3. I have a set of global, custom, commands that I like to use across projects
+3. I have a set of global custom commands that I like to use across projects
 
-For reference: custom commands are user-defined prompts. Eg:
+For reference, custom commands are user-defined prompts. For example:
 
 ![Calling a command]({{ site.baseurl }}/assets/custom-prompts.png)
 
@@ -38,7 +38,7 @@ Check each of these directories:
 ~/.config/amp/commands
 ~/.gemini/commands
 
-If any of them contains an md that the others do not, or a newer version, sync it to the other directories too.
+If any of them contains an `.md` that the others do not, or a newer version, sync it to the other directories too.
 ```
 
 It works well enough for my needs. Oh, and in case you're curious, [these are my dotfiles](https://github.com/diegopetrucci/dot/).

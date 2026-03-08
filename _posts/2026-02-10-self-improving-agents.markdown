@@ -12,15 +12,15 @@ LLM agents are great, but them not having memory and not "learning on the job" i
 
 These days there's quite a lot of discourse on X about ways to improve this flow, and to make agents learn automatically. People have come up with very complicated setups, but I like simple stuff (maybe a skill issue, who knows). This is what I got so far:
 
-1. For each project, I add a short section to `AGENTS.md` that tells the agent to keep a private notes file (`.agents/notes.md`) and update it every time it learns something new, I correct it, or it finds that something is wrong.
-2. Each note line starts with a counter, starting at `[0]`.
+1. For each project, I add a short section to `AGENTS.md` that tells the agent to keep a private notes file (`.agents/notes.md`) and update it every time it learns something new, I correct it, or it finds something wrong.
+2. Each note starts with a counter, beginning at `[0]`.
 3. Before writing a new note, it checks if the idea is already there.
 4. If it is, it just increments the counter.
 5. When a note reaches `[3]`, it promotes it into the main `AGENTS.md` instructions.
 
 This is all to avoid having to manually edit the agents file for corrections, or having to tell them to do it within conversations.
 
-I use codex primarly, and I've found that it loves to write _a lot_ of notes, which is kind of cute. Plus the file doubles as a nice history of the project.
+I use Codex primarily, and I've found that it loves to write _a lot_ of notes, which is kind of cute. Plus the file doubles as a nice history of the project.
 
 I've been using this strategy for just a week-ish, so I haven't hit issues with memories being too long; but I assume eventually I'll need to prune them manually, or tell the agents to do it if eg the number of items is > N.
 
