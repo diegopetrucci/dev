@@ -2,7 +2,8 @@
 
 One offs:
 
-- `rbenv local 3.4.5`
+- `source "$(brew --prefix chruby)/share/chruby/chruby.sh" && chruby 3.4.9`
+- If Ruby 3.4.9 is not installed yet: `ruby-install ruby 3.4.9`
 - `bundle install`
 
 Build and run:

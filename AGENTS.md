@@ -8,6 +8,8 @@
 - `_site/` is the generated output from Jekyll builds; avoid manual edits here.
 
 ## Build, Test, and Development Commands
+- Ruby 3.4.9 is required. With `chruby`, install it via `ruby-install ruby 3.4.9` if needed.
+- Load `chruby` in your shell before running commands, for example `source "$(brew --prefix chruby)/share/chruby/chruby.sh" && chruby 3.4.9`. If you also load `auto.sh`, the repo’s `.ruby-version` will auto-select Ruby 3.4.9.
 - `bundle install` installs Ruby gems for the site.
 - `bundle exec jekyll serve` runs the local dev server (default `http://localhost:4000`) and rebuilds on changes.
 - `bundle exec jekyll build` produces the static site in `_site/`.
