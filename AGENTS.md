@@ -9,11 +9,15 @@
 
 ## Build, Test, and Development Commands
 - Ruby 3.4.9 is required. With `chruby`, install it via `ruby-install ruby 3.4.9` if needed.
+- The documented workflow assumes Homebrew, `chruby`, and `ruby-install` are already available.
 - Load `chruby` in your shell before running commands, for example `source "$(brew --prefix chruby)/share/chruby/chruby.sh" && chruby 3.4.9`. If you also load `auto.sh`, the repo’s `.ruby-version` will auto-select Ruby 3.4.9.
-- `bundle install` installs Ruby gems for the site.
-- `bundle exec jekyll serve` runs the local dev server (default `http://localhost:4000`) and rebuilds on changes.
+- `bundle check || bundle install` installs Ruby gems only when needed.
 - `bundle exec jekyll build` produces the static site in `_site/`.
+- `bundle exec jekyll serve --livereload` runs the local dev server and rebuilds on changes.
+- The site `baseurl` is `/dev`, so open `http://127.0.0.1:4000/dev/`, not `http://127.0.0.1:4000/`.
+- Current builds emit Sass deprecation warnings from the remote theme; treat a zero exit code as a successful build.
 - `bundle exec jekyll clean` (optional) clears caches if builds behave oddly.
+- Deployment: the default branch is `gh-pages`, and pushes to `gh-pages` trigger the GitHub Pages workflow in `.github/workflows/pages.yml`.
 
 ## Coding Style & Naming Conventions
 - Content is Markdown with YAML front matter. Keep front matter minimal and consistent:
