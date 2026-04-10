@@ -10,7 +10,7 @@ categories: agents llm ai claudecode automation
 
 As I work on side-projects I tend to accumulate smaller TODOs, like bugs, infra updates, analytics, that I struggle to justify focusing on while I'm directly in front of my machine. While I could spin off an agent in the background, I still find myself distracted by it, and I don't think this setup is productive.
 
-To fix this, I've thought about agents going through these tasks at night, so that when I wake up I can find some amount of work done. Up until now I've been using [NightShift](https://github.com/marcus/nightshift) to do it. It's an interesting project, but for my taste it's too complicated. [I like simple stuff](https://diegopetrucci.github.io/dev/self-improving-agents), tailored to my exact needs without too much configuration, and I found it was either breaking or needing too much babysitting to justify itself.
+To fix this, I've thought about agents going through these tasks at night, so that when I wake up I can find some amount of work done. Up until now I've been using [NightShift](https://github.com/marcus/nightshift) to do it. It's an interesting project, but for my taste it's too complicated. [I like simple stuff]({{ "/self-improving-agents" | relative_url }}), tailored to my exact needs without too much configuration, and I found it was either breaking or needing too much babysitting to justify itself.
 
 Hence, as an interim setup, I have experimented with cron jobs and OpenClaw triggers. It has been… fine. But OpenClaw is a chunky boy, doing a lot of things, and doing a lot of things means a lot can go wrong. Specialised tools always work better in my experience.
 
