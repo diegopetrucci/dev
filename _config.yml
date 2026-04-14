@@ -27,6 +27,8 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-remote-theme
+exclude:
+  - AGENTS.md
 permalink: /:title
 posts_title: "Posts"
 analytics:
