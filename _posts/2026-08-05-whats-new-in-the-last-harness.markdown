@@ -1,8 +1,6 @@
 ---
 header:
   image: /assets/posts/cutting-tokens.png
-  image_height: 420px
-  image_position: center
   og_image: /assets/posts/cutting-tokens.png
 layout: single
 title: What’s new in the last harness — August 2026
