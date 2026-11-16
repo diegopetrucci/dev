@@ -22,7 +22,7 @@ author:
     - label: "Feed"
       icon: "fas fa-fw fa-rss-square"
       url: "https://diegopetrucci.github.io/dev/feed.xml"
-remote_theme: "mmistakes/minimal-mistakes@4.28.0"
+remote_theme: "mmistakes/minimal-mistakes@4.28.1"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
