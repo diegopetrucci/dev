@@ -8,9 +8,9 @@
 - `_site/` is the generated output from Jekyll builds; avoid manual edits here.
 
 ## Build, Test, and Development Commands
-- Ruby 3.4.9 is required. With `chruby`, install it via `ruby-install ruby 3.4.9` if needed.
+- Ruby 3.4.12 is required. With `chruby`, install it via `ruby-install ruby 3.4.12` if needed.
 - The documented workflow assumes Homebrew, `chruby`, and `ruby-install` are already available.
-- Load `chruby` in your shell before running commands, for example `source "$(brew --prefix chruby)/share/chruby/chruby.sh" && chruby 3.4.9`. If you also load `auto.sh`, the repo’s `.ruby-version` will auto-select Ruby 3.4.9.
+- Load `chruby` in your shell before running commands, for example `source "$(brew --prefix chruby)/share/chruby/chruby.sh" && chruby 3.4.12`. If you also load `auto.sh`, the repo’s `.ruby-version` will auto-select Ruby 3.4.12.
 - `bundle check || bundle install` installs Ruby gems only when needed.
 - `bundle exec jekyll build` produces the static site in `_site/`.
 - `bundle exec jekyll serve --livereload` runs the local dev server and rebuilds on changes.
@@ -32,7 +32,9 @@
 - Prefer short paragraphs and clear headings for posts; keep titles descriptive.
 
 ## Testing Guidelines
-- There are no automated tests. Validate changes by running `bundle exec jekyll build` or `bundle exec jekyll serve`.
+- Pull requests run a production Jekyll build on Ubuntu 24.04 in `.github/workflows/ci.yml`. Validate locally with `JEKYLL_ENV=production bundle exec jekyll build`.
+- Only pushes to `gh-pages` or manual runs on `gh-pages` deploy the site. PR checks have read-only repository permissions.
+- Dependabot checks Bundler dependencies and GitHub Actions weekly. Minor and patch updates are grouped; major updates remain separate.
 - For content changes, spot-check rendered pages and verify image/link paths.
 
 ## Commit & Pull Request Guidelines
